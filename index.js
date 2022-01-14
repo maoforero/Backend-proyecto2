@@ -4,5 +4,5 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, (req, res) => {
-    console.log(`It's Alive 🤖 http://localhost:${PORT}`);
+    console.log(`**** It's Alive 🤖 http://localhost:${PORT} ****`);
 })
