@@ -3,8 +3,8 @@ const { Router } = express;
 
 let routerSms = new Router
 
-routerSms.get("/sms", (req, res, next) => {
-    res.send("sms");
+routerSms.get("/carritos", (req, res, next) => {
+    res.send("carritos");
 })
 
 module.exports = routerSms;
