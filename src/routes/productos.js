@@ -1,9 +1,16 @@
 const express =  require('express');
 const { Router } = express();
-let routerPro = new Router;
+const boom = require('@hapi/boom');
+let router = new Router;
 
-routerPro.get("/productos",(req, res, next) => {
-    res.send("Productos");
+router.get("/",(req, res, next) => {
+
+    try {
+        res.send("Productos");
+    } catch (error) {
+        next(error)
+    }
+    
 });
 
-module.exports = routerPro;
+module.exports = router;

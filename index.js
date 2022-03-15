@@ -2,6 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
+const router = require('./src/routes/index');
 const { errorHandler, resError} = require('./src/middlewares/error.handler')
 
 

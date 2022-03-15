@@ -1,10 +1,9 @@
 const express = require('express');
 const { Router } = express;
-const {resError, errorHandler} = require("../middlewares/error.handler")
 
-let routerSms = new Router
+let router = new Router
 
-routerSms.get("/carritos", (req, res, next) => {
+router.get("/", (req, res, next) => {
     try {
         res.send("carritos");
     } catch (error) {
@@ -12,4 +11,4 @@ routerSms.get("/carritos", (req, res, next) => {
     }
 })
 
-module.exports = routerSms;
+module.exports = router; 
